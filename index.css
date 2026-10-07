@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #181818;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    margin: 40px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main_cotaint {
+    width: 400px;
+    max-height: 550px;
+    min-height: 200px;
+
+    background: #24242486;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.main_cotaint h2 {
+    margin-bottom: 8px;
+}
+
+.main_cotaint h4 {
+    color: #999;
+
+    font-size: 12px;
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-feld {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+
+    background: #303030;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+}
+
+#input {
+    flex: 1;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+}
+
+#input::placeholder {
+    color: #888;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+#add-btn {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #26765c;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+
+    border-radius: 6px;
+
+    order: 2;
+}
+
+#add-btn:hover {
+    background: #30916f;
+}
+
+
+/* =========================
+   COMPLETE + HISTORY
+========================= */
+
+.histroy {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.histroy p {
+    font-size: 10px;
+
+    color: #817f7f;
+
+    padding: 7px;
+}
+
+.his {
+    cursor: pointer;
+}
+
+.his:hover {
+    background: #303030;
+
+    border-radius: 6px;
+}
+
+
+/* =========================
+   TASK LIST
+========================= */
+
+#task-list {
+    max-height: 300px;
+
+    overflow-y: auto;
+
+    margin-top: 10px;
+
+    padding-right: 10px;
+}
+
+
+/* =========================
+   TASK
+========================= */
+
+.result {
+
+    width: 100%;
+
+    min-height: 10px;
+
+    margin-top: 25px;
+
+    padding: 10px 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border-bottom: 1px solid #444;
+}
+
+
+/* Checkbox */
+
+.result input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+}
+
+
+/* Task Text */
+
+.result label {
+    color: #ddd;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+#task-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+#task-list::-webkit-scrollbar-thumb {
+    background: #2b2b2b;
+
+    border-radius: 10px;
+}
+
+#task-list::-webkit-scrollbar-thumb:hover {
+    background: #7c7c7c;
+}
+
+
+/* =========================
+   HISTORY PAGE
+========================= */
+
+#history-page {
+    display: none;
+}
+
+
+/* History Header */
+
+.history-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.history-header h3 {
+    font-size: 16px;
+}
+
+
+/* Back Button */
+
+#back-btn {
+    border: none;
+
+    background: #303030;
+
+    color: #aaa;
+
+    padding: 7px 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#back-btn:hover {
+    background: #26765c;
+
+    color: white;
+}
+
+
+/* =========================
+   HISTORY LIST
+========================= */
+
+#history-list {
+    max-height: 300px;
+
+    overflow-y: auto;
+}
+
+
+/* History Item */
+
+.history-item {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 5px;
+
+    margin-top: 10px;
+
+    border-bottom: 1px solid #444;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* Delete Button */
+
+.history-item button {
+
+    border: none;
+
+    background: transparent;
+
+    color: #888;
+
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.history-item button:hover {
+    color: #ff5555;
+}
